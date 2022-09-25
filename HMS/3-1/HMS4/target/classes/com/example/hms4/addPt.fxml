@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.addPt">
+   <children>
+      <TextField fx:id="tfName" layoutX="224.0" layoutY="133.0" />
+      <TextField fx:id="tfAge" layoutX="224.0" layoutY="193.0" />
+      <TextField fx:id="tfGender" layoutX="224.0" layoutY="253.0" />
+      <TextField fx:id="tfPhoneNum" layoutX="224.0" layoutY="313.0" />
+      <TextField fx:id="tfAdhaar" layoutX="224.0" layoutY="373.0" />
+      <Text layoutX="125.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME" />
+      <Text layoutX="125.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER" />
+      <Text layoutX="130.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph.No" />
+      <Text layoutX="113.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AADHAR NO" />
+      <Text layoutX="125.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGE" />
+      <Button fx:id="logout" layoutX="821.0" layoutY="31.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+      <Button fx:id="done" layoutX="416.0" layoutY="530.0" mnemonicParsing="false" onAction="#saveInfo" text="SAVE" />
+      <TextField fx:id="tfPassword" layoutX="224.0" layoutY="433.0" />
+      <Text layoutX="113.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set Password" />
+      <Label fx:id="lbSaved" layoutX="164.0" layoutY="610.0" prefHeight="18.0" prefWidth="273.0" textFill="#1b9614" />
+      <Button fx:id="btBack" layoutX="46.0" layoutY="31.0" mnemonicParsing="false" onAction="#adminHome" prefHeight="30.0" prefWidth="44.0" text="←">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

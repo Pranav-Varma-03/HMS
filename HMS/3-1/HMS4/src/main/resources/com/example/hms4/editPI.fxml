@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.editPI">
+   <children>
+      <TextField fx:id="tfPatId" layoutX="310.0" layoutY="157.0" />
+      <TextField fx:id="tfPassword" layoutX="310.0" layoutY="200.0" />
+      <Text layoutX="218.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="59.33203125" />
+      <Text layoutX="218.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Ph.No" />
+      <Button fx:id="logout" layoutX="814.0" layoutY="40.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+      <Button fx:id="save" layoutX="364.0" layoutY="337.0" mnemonicParsing="false" onAction="#savePI" text="Save" />
+      <TextField fx:id="tfPhoneNum" layoutX="310.0" layoutY="246.0" />
+      <Text layoutX="218.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Id" />
+      <Button fx:id="btBack" layoutX="39.0" layoutY="40.0" mnemonicParsing="false" onAction="#adminHome" text="Back" />
+      <Label fx:id="lbSaved2" layoutX="55.0" layoutY="473.0" prefHeight="18.0" prefWidth="490.0" textFill="#209e48" />
+      <Label fx:id="lbSaved1" layoutX="55.0" layoutY="473.0" prefHeight="18.0" prefWidth="490.0" textFill="#209e48" />
+   </children>
+</AnchorPane>

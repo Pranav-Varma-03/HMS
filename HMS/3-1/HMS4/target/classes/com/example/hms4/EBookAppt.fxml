@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.EBookAptController">
+   <children>
+      <TableView fx:id="tvDocList" editable="true" layoutX="263.0" layoutY="80.0" onMouseClicked="#handleMouseAction" prefHeight="625.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="colDocId" prefWidth="134.40011596679688" text="Doctor's ID" />
+          <TableColumn fx:id="colDocName" prefWidth="182.39990234375" text="Doctor's Name" />
+            <TableColumn fx:id="colSpec" prefWidth="163.20001220703125" text="Specialization" />
+            <TableColumn fx:id="colTimeSlot" prefWidth="149.5999755859375" text="Time-slot" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="cbBoth" layoutX="41.0" layoutY="296.0" mnemonicParsing="false" onAction="#bookBoth" text="BOTH" />
+      <CheckBox fx:id="cbSpec" layoutX="40.0" layoutY="251.0" mnemonicParsing="false" onAction="#bookSpec" text="SPECIALIZED" />
+      <Button fx:id="btBack" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBack" text="←" />
+      <Button fx:id="btLogout" layoutX="834.0" layoutY="22.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+      <Text layoutX="41.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Doctor's ID" />
+      <TextField fx:id="tfDrId" layoutX="40.0" layoutY="409.0" />
+      <CheckBox fx:id="cbGen" layoutX="41.0" layoutY="202.0" mnemonicParsing="false" onAction="#bookGen" text="GENERAL" />
+      <Button fx:id="btBook" layoutX="92.0" layoutY="459.0" mnemonicParsing="false" onAction="#bookApts" text="Book" />
+      <Label fx:id="lbSaved" layoutX="20.0" layoutY="539.0" prefHeight="122.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>

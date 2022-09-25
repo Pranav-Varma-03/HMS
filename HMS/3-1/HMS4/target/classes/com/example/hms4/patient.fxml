@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.PatientController">
+   <children>
+      <Text layoutX="390.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous Details" wrappingWidth="171.7367706298828">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="190.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor ID" />
+      <Text layoutX="190.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Details" />
+      <Text layoutX="190.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disease Details" />
+      <Text layoutX="190.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine Details" />
+      <Label fx:id="lbPatId" layoutX="113.0" layoutY="126.0" prefHeight="18.0" prefWidth="128.0" />
+      <Label fx:id="lbDocId" layoutX="329.0" layoutY="366.0" prefHeight="18.0" prefWidth="274.0" />
+      <Label fx:id="lbMedDt" layoutX="337.0" layoutY="406.0" prefHeight="18.0" prefWidth="260.0" />
+      <Label fx:id="lbDsDt" layoutX="318.0" layoutY="446.0" prefHeight="18.0" prefWidth="210.0" />
+      <Label fx:id="lbTsDt" layoutX="318.0" layoutY="486.0" prefHeight="18.0" prefWidth="244.0" />
+      <Button fx:id="btBookAp" layoutX="562.0" layoutY="109.0" mnemonicParsing="false" onAction="#patBookApt" prefHeight="74.0" prefWidth="145.0" text="BOOK APPOINTMENT" />
+      <Button fx:id="btBack" layoutX="34.0" layoutY="39.0" mnemonicParsing="false" onAction="#goBack" text="←" />
+      <Button fx:id="btLogout" layoutX="795.0" layoutY="39.0" mnemonicParsing="false" onAction="#adminLogOut" prefHeight="26.0" prefWidth="75.0" text="LogOut" />
+      <Text layoutX="166.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient ID :" />
+   </children>
+</AnchorPane>

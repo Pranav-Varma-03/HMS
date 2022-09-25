@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.DoctorController">
+   <children>
+      <TableView fx:id="tvPat" layoutX="198.0" layoutY="34.0" onMouseClicked="#handleMouseAction" prefHeight="652.0" prefWidth="707.0">
+        <columns>
+          <TableColumn fx:id="colPatId" prefWidth="61.60003662109375" text="Patient ID" />
+            <TableColumn fx:id="colPatName" prefWidth="136.79998779296875" text="NAME" />
+            <TableColumn fx:id="colPatAge" prefWidth="50.39996337890625" text="AGE" />
+            <TableColumn fx:id="colPatDisease" prefWidth="135.20001220703125" text="DISEASE DETAILS" />
+            <TableColumn fx:id="colPatMed" prefWidth="172.800048828125" text="MEDICINES" />
+            <TableColumn fx:id="colPatTest" prefWidth="186.39990234375" text="TESTS" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfMed" layoutX="23.0" layoutY="290.0" promptText="Ex. Dolo650" />
+      <TextField fx:id="tfDisease" layoutX="23.0" layoutY="216.0" promptText="Ex. Fever, Cold,Cough..." />
+      <TextField fx:id="tfTests" layoutX="24.0" layoutY="373.0" promptText="Ex. MRI Scan" />
+      <Button fx:id="btSave" layoutX="45.0" layoutY="450.0" mnemonicParsing="false" onAction="#saveData" prefHeight="26.0" prefWidth="94.0" text="Save" />
+      <Label fx:id="lbSave" layoutX="16.0" layoutY="525.0" prefHeight="122.0" prefWidth="167.0" textFill="#13b413" />
+      <Text layoutX="23.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disease details" />
+      <Text layoutX="25.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicines" />
+      <Text layoutX="23.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tests" />
+      <Button fx:id="logOut" layoutX="57.0" layoutY="73.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+      <TextField fx:id="tfPatId" layoutX="24.0" layoutY="147.0" />
+      <Text layoutX="24.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient ID" />
+      <Label fx:id="lbDocId" layoutX="92.0" layoutY="34.0" prefHeight="18.0" prefWidth="84.0" />
+      <Text layoutX="18.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor ID :" wrappingWidth="66.66525268554688" />
+   </children>
+</AnchorPane>

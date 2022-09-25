@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.DispPatController">
+   <children>
+      <TableView fx:id="tvPatList" editable="true" layoutX="19.0" layoutY="84.0" prefHeight="580.0" prefWidth="879.0">
+        <columns>
+          <TableColumn fx:id="colPatID" prefWidth="100.79998779296875" text="PatientID" />
+            <TableColumn fx:id="colName" prefWidth="165.60000610351562" text="Name" />
+            <TableColumn fx:id="colAge" prefWidth="80.79998779296875" text="Age" />
+            <TableColumn fx:id="colDocId" prefWidth="91.20001220703125" text="DoctorID" />
+            <TableColumn fx:id="colTOA" prefWidth="154.4000244140625" text="Time of Appointment" />
+            <TableColumn fx:id="colActStat" prefWidth="135.199951171875" text="Activity Status" />
+            <TableColumn fx:id="colPhNo" prefWidth="216.0" text="Ph.No" />
+        </columns>
+      </TableView>
+      <Button fx:id="btback" layoutX="31.0" layoutY="27.0" mnemonicParsing="false" onAction="#goBack" text="←" />
+      <Button fx:id="btlogout" layoutX="832.0" layoutY="27.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+   </children>
+</AnchorPane>

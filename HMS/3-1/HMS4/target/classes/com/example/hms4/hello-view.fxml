@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="920.0" style="-fx-background-color: #FDFEFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.LogIn">
+    <children>
+        <TextField fx:id="Username" layoutX="693.0" layoutY="260.0" prefHeight="19.0" prefWidth="150.0" />
+        <Text layoutX="624.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="63.6910400390625" />
+        <Text layoutX="624.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+        <Button fx:id="bEmer" layoutX="721.0" layoutY="519.0" mnemonicParsing="false" onAction="#emerPage" prefHeight="39.0" prefWidth="94.0" text="Emergency" />
+        <Button fx:id="bLogn" layoutX="744.0" layoutY="375.0" mnemonicParsing="false" onAction="#adminlogin" text="Log In" />
+        <PasswordField fx:id="Password" layoutX="693.0" layoutY="308.0" />
+        <Label fx:id="wrong" layoutX="286.0" layoutY="6.0" textFill="#e70808" />
+      <Text fill="#1e0415" layoutX="433.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HMS" textAlignment="CENTER" wrappingWidth="166.9366455078125">
+         <font>
+            <Font size="62.0" />
+         </font>
+      </Text>
+      <Text fill="#c11d04" layoutX="394.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call 1086 for emergency">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#c11d04" layoutX="595.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24x7 Helpline 040 8768 6969" wrappingWidth="184.53680419921875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#c11d04" layoutX="162.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ambulance +91 8331036100" wrappingWidth="197.3367462158203">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="395.0" fitWidth="436.0" layoutX="8.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/lp.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.emer">
+   <children>
+      <Text layoutX="143.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="148.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age" />
+      <Text layoutX="549.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+      <Text layoutX="552.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph.No" />
+      <Text layoutX="296.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relation with the Patient" />
+      <Text layoutX="296.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ph.No of Gaurdian" />
+      <Text layoutX="296.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prior Health Problems" />
+      <TextField fx:id="tfName" layoutX="211.0" layoutY="206.0" />
+      <TextField fx:id="tfAge" layoutX="211.0" layoutY="266.0" />
+      <TextField fx:id="tfGender" layoutX="620.0" layoutY="206.0" />
+      <TextField fx:id="tfPhNo" layoutX="620.0" layoutY="266.0" />
+      <TextField fx:id="tfRel" layoutX="474.0" layoutY="370.0" promptText="(if any)" />
+      <TextField fx:id="tfPhNoRel" layoutX="474.0" layoutY="430.0" />
+      <TextField fx:id="tfHealth" layoutX="474.0" layoutY="490.0" promptText="(if applicable)" />
+      <Button fx:id="btOk" layoutX="394.0" layoutY="588.0" mnemonicParsing="false" onAction="#saveInfo" prefHeight="40.0" prefWidth="98.0" text="OK" />
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="←" />
+      <Button fx:id="logout" layoutX="854.0" layoutY="14.0" mnemonicParsing="false" onAction="#adminLogOut" text="LogOut" />
+      <Label fx:id="lbId" layoutX="110.0" layoutY="319.0" />
+      <Text layoutX="364.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emergency Page" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hms4.editDI">
+   <children>
+      <TextField fx:id="tfPhnNo" layoutX="281.0" layoutY="341.0" />
+      <Text layoutX="179.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Ph.No" />
+      <Button fx:id="btSave" layoutX="336.0" layoutY="506.0" mnemonicParsing="false" onAction="#saveInfo" text="save" />
+      <Button fx:id="btLogOut" layoutX="810.0" layoutY="23.0" mnemonicParsing="false" onAction="#adminLogOut" text="Logout" />
+      <TextField fx:id="tfNewTime" layoutX="281.0" layoutY="439.0" />
+      <Text layoutX="181.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Time Slots" />
+      <Text layoutX="179.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Time Slots" />
+      <PasswordField fx:id="pfDocPwd" layoutX="281.0" layoutY="193.0" />
+      <Text layoutX="179.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doc Password " />
+      <Label fx:id="lbMessage" layoutX="315.0" layoutY="63.0" prefHeight="18.0" prefWidth="290.0" />
+      <Text layoutX="184.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doc ID" />
+      <Label fx:id="lbOldTime" layoutX="281.0" layoutY="394.0" prefHeight="18.0" prefWidth="150.0" />
+      <Button fx:id="btBack" layoutX="33.0" layoutY="27.0" mnemonicParsing="false" onAction="#adminHome" text="Back" />
+      <TextField fx:id="tfDocId" layoutX="281.0" layoutY="150.0" />
+      <Button fx:id="btVerify" layoutX="330.0" layoutY="245.0" mnemonicParsing="false" onAction="#verifyCred" text="Verify" />
+      <Label fx:id="lbVerify" layoutX="202.0" layoutY="72.0" prefHeight="18.0" prefWidth="515.0" />
+      <Label fx:id="lbOldPhnNo" layoutX="280.0" layoutY="300.0" prefHeight="18.0" prefWidth="150.0" />
+      <Text layoutX="179.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Ph.No" />
+      <Button fx:id="btRm" layoutX="176.0" layoutY="506.0" mnemonicParsing="false" onAction="#removeDoc" text="Remove Doctor" />
+   </children>
+</AnchorPane>
